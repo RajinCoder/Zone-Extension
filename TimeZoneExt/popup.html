@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            p {
+                margin: 0;
+            }
+            body{
+                font-family: cursive;
+                font-size: 22px;
+                text-align: center;
+            }
+            label {
+                font-size: medium;
+            }
+            #timeZone {
+                width: 80px;
+                border-radius: 4px;
+                border-width: 2px;
+                border-color: black;
+                background-color: #C0C0C0;
+            }
+            body{
+                background-color: #C0C0C0;
+                margin: 1px;
+                min-width: 150px; /* your desired width */
+                max-width: 100%;
+                min-height: 150px;
+                max-height: 100px;
+                border: solid black;
+                border-radius: 0px;
+                outline: #696969 solid 1px; 
+                
+            }
+        </style>  
+    </head>
+
+    <body>
+        <p id="work"></p> 
+        <label for="timeZone">Time Zones:</label>
+        <br>
+        <select name="timeZone" id="timeZone">
+            <option value="UTC">UTC</option>
+            <option value="ANAT">ANAT(Anadyr)</option>
+            <option value="SBT">SBT(Honiara)</option>
+            <option value="AEST">AEST(Melbourne)</option>
+            <option value="JST">JST(Tokyo)</option>
+            <option value="CST-B">CST(Beijing)</option>
+            <option value="WIB">WIB(Jakarta)</option>
+            <option value="BST-D">BST(Dhaka)</option>
+            <option value="UZT">UZT(Tashkent)</option>
+            <option value="GST">GST(Dubai)</option>
+            <option value="MSK">MSK(Moscow)</option>
+            <option value="CEST">CEST(Brussels)</option>
+            <option value="BST-L">BST(London)</option>
+            <option value="GMT">GMT(Accra)</option>
+            <option value="CVT">CVT(Praia)</option>
+            <option value="WGST">WGST(Nuuk)</option>
+            <option value="ART">ART(Buenos Aires)</option>
+            <option value="EDT">EDT(New York)</option>
+            <option value="CDT">CDT(Mexico City)</option>
+            <option value="CST-G">CST(Guatemala City)</option>
+            <option value="PDT">PDT(Los Angeles)</option>
+            <option value="AKDT">AKDT(Anchorage)</option>
+            <option value="HDT">HDT(Adak)</option>
+            <option value="HST">HST(Honolulu)</option>
+            <option value="NUT">NUT(Alofi)</option>
+            <option value="AoE">AoE(Baker Island)</option>
+            <option value="LINT">LINT(Kiritimati)</option>
+            <option value="TOT">TOT(Nukualofa)</option>
+            <option value="LHST">LHST(Lord Howe Island)</option>
+            <option value="ACST">ACST(Adelaide)</option>
+            <option value="MMT">MMT(Yangon)</option>
+            <option value="IST">IST(New Delhi)</option>
+            <option value="IRDT">IRDT(Tehran)</option>
+            <option value="NDT">NDT(St.John's)</option>
+            <option value="MART">MART(Taiohae)</option>
+            <option value="CHAST">CHAST(Catham Islands)</option>
+            <option value="ACWST">ACWST(Eucla)</option>
+            <option value="NPT">NPT(Kathmandu)</option>
+        </select>
+        <script src="popup.js"></script>
+    </body>
+</html>

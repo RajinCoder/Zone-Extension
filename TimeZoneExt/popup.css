@@ -1,0 +1,152 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  width: 170px;
+  padding: 0;
+  background: #ffffff;
+  transition: background 0.2s;
+}
+
+body.night {
+  background: #0d1b2a;
+}
+
+.card {
+  padding: 16px 14px 12px;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+.time-block {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.time-row {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  line-height: 1;
+}
+
+.time {
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  color: #1a1a1a;
+  transition: color 0.2s;
+}
+
+body.night .time {
+  color: #e8eef4;
+}
+
+.period {
+  font-size: 13px;
+  color: #888;
+  font-weight: 400;
+  transition: color 0.2s;
+}
+
+body.night .period {
+  color: #5b7a99;
+}
+
+.date {
+  font-size: 11px;
+  color: #999;
+  margin-top: 3px;
+  transition: color 0.2s;
+}
+
+body.night .date {
+  color: #3d5a73;
+}
+
+/* ── Theme toggle ── */
+.theme-btn {
+  background: none;
+  border: 0.5px solid rgba(0, 0, 0, 0.12);
+  border-radius: 20px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  flex-shrink: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+body.night .theme-btn {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.theme-btn:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+body.night .theme-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.divider {
+  border: none;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.08);
+  margin: 10px 0;
+  transition: border-color 0.2s;
+}
+
+body.night .divider {
+  border-top-color: rgba(255, 255, 255, 0.07);
+}
+
+.zone-row {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #1D9E75;
+  flex-shrink: 0;
+}
+
+body.night .dot {
+  background: #2a7a5a;
+}
+
+select {
+  flex: 1;
+  font-size: 11px;
+  font-family: inherit;
+  border: none;
+  background: transparent;
+  color: #555;
+  outline: none;
+  cursor: pointer;
+  appearance: auto;
+  transition: color 0.2s;
+}
+
+body.night select {
+  color: #5b7a99;
+}
